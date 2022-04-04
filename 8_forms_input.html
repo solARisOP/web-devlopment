@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>This is HTML forms tutorial</h2>
+    <form action="bcknd.php"> <!--backened where we want to sumbit our form where input is given by user -->
+        <div> <!--it represents a block or section -->
+            <label for="name">Name : </label> <!--if user clicks on Name it will automatically sselect the input area, here for and id in input should be same -->
+            <input type="text" name="myname" id="name"> <!--name is used for reference in backened while submitting and id is used for identifying this particular value-->
+        </div>
+        <br>
+        <div>
+            Role : <input type="text" name="myRole"> <!--type defines the input type it will take-->
+        </div>
+        <br>
+        <div>
+            Email : <input type="email" name="myEmail">
+        </div>
+
+        <br>
+        <div>
+            Date : <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            Bonus : <input type="number" name="myBonus">
+        </div>
+        <br>
+        <div>
+            Are you eligible ?: <input type="checkbox" name="myeligibility" checked> <!--here checked means the box will be checked by default-->
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">                              Other <input type="radio" name="myGender"> <!--radio means only one option can be selected from the given options-->
+        </div>
+        <br>
+        <div>
+            Write about yourself: <br><textarea name="myText" cols="90" rows="10"></textarea> <!-- user can write a description or anything in this area. Cols and rows define no. of rows and cols we wanna apoint in the webpage-->
+        </div>
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="mycar" id="car"> <!--select creates a dropdown list of values that a user can choose from-->
+                <option value="ind">indica</option> <!--here value specifies the value of an <option> element -->
+                <option value="swft"selected>swift</option> <!--selected represents the default value selected from the options-->
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now"> <!--here value acts as a text on the sumbit and reset options-->
+            <input type="reset" value="Reset Now">
+        <!-- value attribute behaves differently with different type attribute  -->
+        </div>
+    </form> 
+</body>
+</html>

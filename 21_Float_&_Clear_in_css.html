@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Square+Peg&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        p{
+            font-size: 25px;
+        }
+        body{
+            font-family: 'Beau Rivage', cursive;
+        }
+        .container{
+            width: 700px;
+            border: 3px solid purple;
+            margin: auto;
+            background-color: antiquewhite;
+        }
+        .item{
+            border: 3px solid rgb(73, 77, 197);
+            padding: 12px 3px;
+            margin: 12px 3px;
+            background-color: rgb(148, 181, 207);
+        }
+
+        #fruits{
+            float: left; /*for floating elements of any side*/
+            width: 300px;
+        }
+
+        #computer{
+            float: right;
+            width: 300px;
+        }
+
+        #stationary{
+            clear: both ; /*clear is for telling the other elements that the elements which are floating on right or left or both dont bother me dont overlap on me*/
+            width: 100%;
+            /* clear: right; */
+        }
+        /* .para{
+            border: 3px solid grey;
+            padding: 30px 10px;
+        } */
+        p, h2{
+            /* text-align: center; */
+            text-align: justify; /*for alignment of the text left right center etc.*/
+        }
+        h1{
+            margin: auto;
+            width: 172px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>welcome to my store</h1>
+        <div id="fruits" class="item">
+            <h2>fruits</h2>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quod fuga? Eligendi id dolor ducimus voluptatem rerum impedit nam maxime soluta est iste et, aliquam necessitatibus ab numquam obcaecati doloribus? Almost before we knew it, we had left the ground.</p>
+        </div>
+        <div id="computer" class="item">
+            <h2>computer</h2>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quod fuga? Eligendi id dolor ducimus voluptatem rerum impedit nam maxime soluta est iste et, aliquam necessitatibus ab numquam obcaecati doloribus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore modi dolor ut cum porro, eius illo, fugiat repellendus, rem nulla deserunt necessitatibus? Sequi, voluptas est aliquid at reiciendis veniam earum inventore, explicabo accusantium maiores id error odio atque expedita culpa esse autem fugiat consequuntur sint ipsam quam repellat a? Velit!</p>
+        </div>
+        <div id="stationary" class="item">
+            <h2>stationary</h2>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quod fuga? Eligendi id dolor ducimus voluptatem rerum impedit nam maxime soluta est iste et, aliquam necessitatibus ab numquam obcaecati doloribus?</p>
+        </div>
+        <div id="glasses" class="item">
+            <h2>glasses</h2>
+            <p id="glassespara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quod fuga? Eligendi id dolor ducimus voluptatem rerum impedit nam maxime soluta est iste et, aliquam necessitatibus ab numquam obcaecati doloribus?</p>
+        </div>
+    </div>
+</body>
+</html>

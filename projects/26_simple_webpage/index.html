@@ -8,13 +8,47 @@
 </head>
     <link rel="stylesheet" href="style.css">
     <style>
+
         body{
+            color: white;
             margin: 0px;
             padding: 0px;
             background: url('img/image2.jpg');
         }
+
+        .left{
+            display: inline-block;
+            border: 2px solid red;
+        }
+        
+        .mid{
+            display: block;
+            border: 2px solid black;
+        }
+        
+        .right{
+            float: right;
+            display: inline-block;
+            border: 2px solid yellow;
+        }
+
     </style>
 <body>
-    
+    <header class="header">
+        <!--left box fox logo-->
+        <div class="left">
+            i am left
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="mid">
+            i am mid
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            i am right
+        </div>
+    </header>
 </body>
 </html>
